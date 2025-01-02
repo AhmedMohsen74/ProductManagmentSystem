@@ -73,6 +73,3 @@ product APIs
       "message" :"Saved Successfully"
 }
 ---------
-
-
-https://www.youtube.com/watch?v=hATiwQSvsZc&ab_channel=RavindraDevrani
