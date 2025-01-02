@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZC239cXov+o=",
+  "dgSpecHash": "OPyIO7G6//s=",
   "success": true,
-  "projectFilePath": "G:\\ProductsMS\\ProductsMS\\ProductsMS.csproj",
+  "projectFilePath": "G:\\GitHub\\ProductManagmentSystem\\Products-MS\\ProductsMS\\ProductsMS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amohs\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\amohs\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

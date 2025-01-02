@@ -1,0 +1,78 @@
+Category APIs
+
+1. addupdate:
+     url:https://localhost:7253/api/category/addupdate
+     data: {
+	"id" :0,
+	 "Name" : "Category1"
+}
+   response:
+{
+      "statusCode": 1,
+      "message" :"Saved Successfully"
+}
+
+
+2.getall
+ https://localhost:7253/api/category/getall
+
+
+3. Delete
+   url:https://localhost:7253/api/category/delete/3
+   response:
+{
+      "statusCode": 1,
+      "message" :"Saved Successfully"
+}
+
+4 GetbyId
+   url:https://localhost:7253/api/category/getbyid/5
+
+   response:
+{
+      "statusCode": 1,
+      "message" :"Saved Successfully"
+}
+-------------------------------------------------------
+product APIs
+
+1. addupdate:
+     url:https://localhost:7253/api/product/addupdate
+     data: {
+  "Id":0,
+  "name": "Banana",
+  "description": "eating",
+  "price": 10.99,
+  "categoryId": 2
+}
+
+   response:
+{
+      "statusCode": 1,
+      "message" :"Saved Successfully"
+}
+
+2. https://localhost:7253/api/product/getall
+
+	
+3. Delete
+   url:https://localhost:7253/api/product/delete/3
+   response:
+{
+      "statusCode": 1,
+      "message" :"Saved Successfully"
+}
+
+
+4 GetbyId
+   url:https://localhost:7253/api/product/getbyid/5
+
+   response:
+{
+      "statusCode": 1,
+      "message" :"Saved Successfully"
+}
+---------
+
+
+https://www.youtube.com/watch?v=hATiwQSvsZc&ab_channel=RavindraDevrani
