@@ -1,0 +1,76 @@
+<div class="container mx-auto px-4 max-w-4xl mt-8">
+    <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-gray-300 pb-3 mb-6">
+      Categories
+    </h2>
+  
+    <!-- Search Bar -->
+    <div class="flex items-center gap-4 mb-4">
+      <input
+        type="text"
+        #term
+        placeholder="Search by name"
+        class="flex-grow shadow-md border border-gray-300 rounded-lg py-2 px-4 text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+      />
+      <button
+        (click)="search(term.value)"
+        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md focus:ring-4 focus:ring-blue-300"
+      >
+        Search
+      </button>
+    </div>
+  
+    <!-- Add Button -->
+    <div class="mb-4 flex justify-end">
+      <button
+        routerLink="/add-category"
+        type="button"
+        class="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2 shadow-md"
+      >
+        Add New Category
+      </button>
+    </div>
+  
+    <!-- Categories Table with Scroll -->
+    <div class="rounded-lg shadow-lg border border-gray-300 overflow-hidden">
+      <table class="w-full text-sm text-left text-gray-700">
+        <thead class="bg-gray-100 border-b-2 border-gray-300">
+          <tr>
+            <th class="py-3 px-6 text-lg font-semibold text-gray-800">Category</th>
+            <th class="py-3 px-6 text-lg font-semibold text-gray-800 text-center">Actions</th>
+          </tr>
+        </thead>
+      </table>
+      <!-- Table Body with Scroll -->
+      <div class="max-h-64 overflow-y-auto">
+        <table class="w-full text-sm text-left text-gray-700">
+          <tbody>
+            <tr
+              *ngFor="let category of categories; let i = index"
+              class="border-b last:border-b-0 hover:bg-gray-50"
+            >
+              <td class="py-4 px-6">
+                {{ category.name }}
+              </td>
+              <td class="py-4 px-6 text-center">
+                <button
+                  type="button"
+                  (click)="edit(category.id)"
+                  class="text-white bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded-md shadow-md focus:ring-4 focus:ring-blue-300"
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  (click)="delete(category.id, i)"
+                  class="text-white bg-red-600 hover:bg-red-700 px-3 py-2 rounded-md ml-3 shadow-md focus:ring-4 focus:ring-red-300"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
