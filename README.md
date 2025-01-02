@@ -95,7 +95,7 @@ This repository contains the implementation of a **Simple Product Management Sys
 3. Add, edit, and delete products with real-time updates.
 
 ## Testing the Application
-- Test API endpoints using tools like Postman (available at `https://localhost:7253/api`).
+- Test API endpoints using tools like Postman (available at `https://localhost:7253/api`). You can change it according to your LocalHost.
 
 ## Additional Notes
 - Ensure the backend and database are running before starting the frontend.
